@@ -1,7 +1,0 @@
-#para descargar e instalar
-https://github.com/martin-olivier/airgorah/wiki/Installation
-
-#para instalar
-wget https://github.com/martin-olivier/airgorah/releases/download/v0.7.3/airgorah_0.7.3_`arch`.deb && \
-sudo apt update && \
-sudo apt install ./airgorah_0.7.3_`arch`.deb
