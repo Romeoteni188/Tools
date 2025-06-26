@@ -1,0 +1,15 @@
+============================== ACCAUNT INFORMATIONS ===============================
+Username              : ca_arleen
+Full Name               : Arleen Cuc Alonzo
+Id                    : 31315325968
+Bio                   : 🇬🇹 Embajadora de las casas de la Cultura Región II Norte.
+🇬🇹 Reina Nacional de Humanidades (FAHUSAC).
+🎶 Vísteme despacio que tengo prisa.
+Profile Link          : None
+Is it a private account?      : True
+Is it a business account?    : False
+Phone Number       : ca_arleen
+Email                : ca_arleen
+Followers Count      : 1520
+Following Count      : 291
+Number of Posts        : 67

@@ -1,0 +1,13 @@
+============================== ACCAUNT INFORMATIONS ===============================
+Username              : dulce_iarevalo
+Full Name               : Dulce Marroquin
+Id                    : 48894333519
+Bio                   : • Guatemala/Jutiapa
+Profile Link          : None
+Is it a private account?      : False
+Is it a business account?    : False
+Phone Number       : False
+Email                : False
+Followers Count      : 18206
+Following Count      : 273
+Number of Posts        : 0

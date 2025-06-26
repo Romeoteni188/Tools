@@ -1,0 +1,13 @@
+============================== ACCAUNT INFORMATIONS ===============================
+Username              : sharon.stubbs.775
+Full Name               : Sharon Stubbs
+Id                    : 49505395227
+Bio                   : 
+Profile Link          : None
+Is it a private account?      : True
+Is it a business account?    : False
+Phone Number       : +502 **** **43
+Email                : None
+Followers Count      : 72
+Following Count      : 47
+Number of Posts        : 1
