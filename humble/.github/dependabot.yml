@@ -1,0 +1,11 @@
+version: 2
+updates:
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    exclude-paths:
+      - "additional/*"
+      - "l10n/*"
+      - "samples/*"
+      - "unit_tests/*"

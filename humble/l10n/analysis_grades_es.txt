@@ -1,0 +1,72 @@
+# 'humble' (Analizador de cabeceras HTTP)
+# https://github.com/rfc-st/humble/
+#
+# Licencia MIT
+#
+# Copyright (c) 2020-2025 Rafa 'Bluesman' Faura (rafael.fcucalon@gmail.com)
+#
+# Por la presente se concede permiso, libre de cargos, a cualquier persona que
+# obtenga una copia de este software y de los archivos de documentación
+# asociados (el "Software"), a utilizar el Software sin restricción,
+# incluyendo sin limitación los derechos a usar, copiar, modificar, fusionar,
+# publicar, distribuir, sublicenciar, y/o vender copias del Software, y a
+# permitir a las personas a las que se les proporcione el Software a hacer lo
+# mismo, sujeto a las siguientes condiciones:
+
+# El aviso de copyright anterior y este aviso de permiso se incluirán en todas
+# las copias o partes sustanciales del Software.
+
+# EL SOFTWARE SE PROPORCIONA "COMO ESTÁ", SIN GARANTÍA DE NINGÚN TIPO, EXPRESA O
+# IMPLÍCITA, INCLUYENDO PERO NO LIMITADO A GARANTÍAS DE COMERCIALIZACIÓN,
+# IDONEIDAD PARA UN PROPÓSITO PARTICULAR E INCUMPLIMIENTO. EN NINGÚN CASO LOS
+# AUTORES O PROPIETARIOS DE LOS DERECHOS DE AUTOR SERÁN RESPONSABLES DE NINGUNA
+# RECLAMACIÓN, DAÑOS U OTRAS RESPONSABILIDADES, YA SEA EN UNA ACCIÓN DE CONTRATO,
+# AGRAVIO O CUALQUIER OTRO MOTIVO, DERIVADAS DE, FUERA DE O EN CONEXIÓN CON EL
+# SOFTWARE O SU USO U OTRO TIPO DE ACCIONES EN EL SOFTWARE.
+
+[Sobre esta herramienta]
+
+'humble' es una herramienta estricta al comprobar cabeceras de respuesta HTTP
+y sus valores; algunas de estas cabeceras pueden ser experimentales y quizás no
+estés de acuerdo con todas las advertencias tras un análisis.
+
+!Y eso está bien :)!; nunca se debe confiar ciegamente en los resultados de las
+herramientas de seguridad: se debe realizar un trabajo adicional para decidir si el
+riesgo reportado es inexistente, potencial o real en base a la URL analizada
+(su exposición, entorno, etc.).
+
+
+[Notas y comprobaciones asociadas]
+
+Ordenadas de la peor a la mejor:
+
+E:  Sin 'Cabeceras habilitadas' en el análisis.
+D:  'Protocolos/Cabeceras obsoletas o inseguras' en el análisis.
+C:  'Cabeceras no habilitadas' en el análisis.
+B:  'Huella digital por cabeceras' en el análisis.
+A:  Sin advertencias en las secciones anteriores.
+A+: Sin 'Cabeceras sin valor' en el análisis.
+
+Ficheros fuente de las comprobaciones:
+
+/additional/security.txt    ('Cabeceras habilitadas')
+/additional/insecure.txt    ('Protocolos/Cabeceras obsoletas o inseguras')
+/additional/missing.txt     ('Cabeceras no habilitadas')
+/additional/fingerprint.txt ('Huella digital por cabeceras')
+
+
+[Mejorando la nota]
+
+* 'humble' sigue de forma estricta la documentación y especificaciones de
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers y https://www.w3.org/.
+Algunas cabeceras HTTP, y sus valores requeridos, distinguen entre mayúsculas y
+minúsculas y este puede ser motivo por el cual se muestren advertencias tras el análisis.
+
+* Evalúa las advertencias en relación a la exposición de la URL, su criticidad
+y la naturaleza de la cabecera HTTP: https://mdn.io/Experimental_deprecated_obsolete.
+
+* Usa el parámetro '-s' para excluir cabeceras HTTP del análisis (las exclusiones
+se mostrarán en los resultados).
+
+* No te obsesiones :): mantén una postura de seguridad constante, lo más segura
+posible, documentándola y actualizándola constantemente.
